@@ -1,0 +1,34 @@
+name: bpgcn
+channels:
+  - defaults
+  - conda-forge
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - nvidia
+  - pytorch
+  - pyg
+dependencies:
+  - python==3.9.*
+  - pip
+  # PyTorch has officially announced the discontinuation of its official packages through Anaconda. 
+  # I cannot guarantee that this environment file will remain valid indefinitely
+  # You should try installing it with pip in the future
+  - pytorch==1.13.1
+  - torchvision==0.14.1
+  - torchaudio==0.13.1
+  - pytorch-cuda=11.7
+
+  - pyg=2.3.0=py39_torch_1.13.0_cu117
+
+  - numpy==1.26.4
+  - pandas==2.2.3
+
+  - conda-forge::dimod==0.12.18
+  - conda-forge::dwave-neal==0.6.0
+
+  - tqdm==4.67.1
+  - seaborn==0.13.2
+  - pip:
+      - dhg==0.9.4
+      - pyqubo==1.5.0
+      - pyscipopt==5.3.0
