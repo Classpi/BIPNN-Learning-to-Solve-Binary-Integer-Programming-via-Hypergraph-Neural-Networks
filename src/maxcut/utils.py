@@ -124,7 +124,6 @@ def maxcut_evaluate(
         except KeyError as e:
             raise ValueError(f"Edge {edge} contains unknown node: {e}")
 
-        # 关键修改2: 检查超边中是否存在至少两个不同分组的节点
         groups = [preds[i].item() for i in indices]
         if len(set(groups)) >= 2:
             cut_edges += 1

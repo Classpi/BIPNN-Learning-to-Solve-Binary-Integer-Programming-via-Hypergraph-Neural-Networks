@@ -67,7 +67,7 @@ def run_pubo(layers, hg, H, C, X, num_epochs, lr, convert=False, **kwargs):
         C: Coefficient matrix.
         X: Input data.
         num_epochs: Number of training epochs.
-        lr: Learning rate for optimizer.  # 修改点8: 添加参数说明
+        lr: Learning rate for optimizer.
     """
     if convert:
         g = from_hypergraph_to_graph_clique(hg)
