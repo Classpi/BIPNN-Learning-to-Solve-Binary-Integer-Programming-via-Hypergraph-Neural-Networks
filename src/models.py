@@ -109,3 +109,14 @@ class Net(nn.Module):
             for layer in self.layers:
                 x = layer(x, graph, edge_index, edge_weight, **kwargs)
             return self.sigmoid(x)
+    
+class Net_Constraint(nn.Module):
+
+    def __init__(self, layers: List[Layer]):
+        super(Net_Constraint, self).__init__()
+        self.layers = nn.ModuleList(layers)
+
+    def forward(self, x: torch.Tensor, graph=None, edge_index=None, edge_weight=None, **kwargs):
+            for layer in self.layers:
+                x = layer(x, graph, edge_index, edge_weight, **kwargs)
+            return x

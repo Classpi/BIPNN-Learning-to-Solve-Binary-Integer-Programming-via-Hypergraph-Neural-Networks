@@ -1,7 +1,7 @@
-# BIPNN: Learning to Solve Binary Integer Programming via Hypergraph Neural Networks
-This repository is the official implementation of *BIPNN: Learning to Solve Binary Integer Programming via Hypergraph Neural Networks*
+# Large-Scale Nonlinear Binary Integer Programming with Hypergraph Neural Networks
+This repository is the official implementation of *Large-Scale Nonlinear Binary Integer Programming with Hypergraph Neural Networks*
 
-![alt text](pictures/overview.png)
+![alt text](pictures/BIPNNframework.pdf)
 ## Requirements
 
 To install requirements, you need [anaconda](https://www.anaconda.com/) or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) and run:
@@ -23,6 +23,7 @@ In addition, we have provided some experiments in the `test/` folder
  ┃ ┣ 📜loss.py
  ┃ ┗ 📜utils.py
  ┣ 📜__init__.py
+ ┣ 📜constraint.py
  ┣ 📜constraints.py
  ┣ 📜core.py
  ┣ 📜loss.py
@@ -46,3 +47,4 @@ In addition, we have provided some experiments in the `test/` folder
 
 ### Annealing Strategy
 ![alt text](pictures/annealing_strategy.png)
+

@@ -32,3 +32,5 @@ dependencies:
       - dhg==0.9.4
       - pyqubo==1.5.0
       - pyscipopt==5.3.0
+      - dimod==0.12.18
+      - dwave-neal==0.6.0
