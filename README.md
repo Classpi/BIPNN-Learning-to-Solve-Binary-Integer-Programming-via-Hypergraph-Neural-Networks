@@ -4,9 +4,11 @@ This repository is the official implementation of *BIPNN: Learning to Solve Bina
 ![alt text](pictures/overview.png)
 ## Requirements
 
-To install requirements, you need [anaconda](https://www.anaconda.com/) or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) and run:
+To install requirements, you need [anaconda](https://www.anaconda.com/) or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) or [uv](https://docs.astral.sh/uv/) <font color="green">(recommend)</font> and run:
 
-> conda env create -f environment.yaml  
+> conda env create -f environment.yaml  (use conda venv)
+ 
+> uv sync (use uv) <font color="green">(recommend)</font>
 
 ## Run code
 
